@@ -1,0 +1,15 @@
+//cypress - Spec
+
+describe('My 4th Test', function() {
+  it.only('4TH TestCase ', function(){
+   cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
+   cy.get('.mouse-hover-content').invoke('show')
+   cy.contains('Top').click()
+   cy.url().should('include', 'top')
+   cy.contains('Reload').click()
+   //cy.url().should('include', 'top')
+
+  })
+
+})
+  
